@@ -1,0 +1,493 @@
+
+/* ================ Slider Image Styles ===================*/
+.image-holder img {
+    max-height: 420px;
+    width: auto;
+    object-fit: contain;
+
+    /* Smooth blending */
+    mix-blend-mode: multiply;
+
+    /* Soft edges */
+    border-radius: 10px;
+
+    /* Subtle shadow for depth */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* for white background slider images */
+.image-holder {
+    background: transparent;
+}
+
+.image-holder img {
+    background: transparent;
+}
+
+/* banner/slider image spacing and styling */
+.banner-content {
+    padding-right: 20px;
+}
+
+.banner-subtitle {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 420px;
+
+    margin-bottom: 25px;
+
+    font-weight: 400;
+}
+
+/* ================ Uniform Images in Product Grid ================================ */
+.product-card .image-holder {
+    width: 100%;
+    height: 250px; /* FIXED HEIGHT */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafafa;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card .image-holder img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* ===================== Swiper Product Buttons (Next and Prev) STYLES */
+.product-prev,
+.product-next {
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.product-prev {
+    left: -10px;
+}
+
+.product-next {
+    right: -10px;
+}
+
+.product-prev svg,
+.product-next svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--primary-color);
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===================== Modern Product Card Design ============================= */
+.product-card {
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* ===================== Add to Cart Modern Styles ============================= */
+.product-card .cart-concern {
+    bottom: 60px;
+}
+
+.product-card:hover .cart-concern {
+    bottom: 80px;
+}
+
+.btn-black {
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+/* Cart Icon Styling */
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+
+    background: var(--primary-color);
+    color: #000;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* FAQ section Styling */
+#faq {
+    background: #f9f9f9;
+}
+
+#faq .review-item {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+#faq h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#faq p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* CONTACT SECTION STYLING */
+#contact {
+    background: #fff;
+}
+
+.contact-info h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.contact-info p {
+    color: #555;
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+/* ================ Banner section styling =========================*/
+/* HERO BACKGROUND */
+#billboard {
+    background: linear-gradient(
+        135deg,
+        #faf7f0 0%,   /* soft cream */
+        #f5e6c8 50%,  /* light gold */
+        #ffffff 100%  /* clean white */
+    );
+    padding: 100px 0;
+}
+
+/* TITLE */
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111 !important;
+    margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.banner-subtitle {
+    font-size: 16px;
+    color: #555;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+
+/* BUTTON (GOLD STYLE) */
+.btn-gold {
+    background: var(--primary-color);
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* IMAGE */
+#billboard .image-holder img {
+    max-height: 380px;
+    object-fit: contain;
+
+    mix-blend-mode: multiply; /* blends with background */
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+}
+
+/* SWIPER ARROWS */
+.swiper-arrow {
+    color: var(--primary-color);
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+
+    #billboard {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 1.8rem;
+    }
+
+    .banner-subtitle {
+        margin: 0 auto 20px;
+    }
+
+    #billboard .image-holder img {
+        max-height: 250px;
+        margin-top: 20px;
+    }
+}
+
+#billboard::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(207,162,75,0.2), transparent);
+    top: 10%;
+    right: 10%;
+    z-index: 0;
+}
+
+/* ================================== CART PAGE -================================*/
+.cart-page {
+    padding: 100px 0 60px;
+}
+
+/* HEADER */
+.cart-header h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cart-header p {
+    color: #777;
+}
+
+/* TABLE */
+.cart-table {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cart-table th {
+    background: #f8f8f8;
+    font-weight: 600;
+}
+
+.cart-table td {
+    vertical-align: middle;
+}
+
+/* PRODUCT TEXT */
+.product-name {
+    font-weight: 500;
+}
+
+.product-price {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* REMOVE BUTTON */
+.btn-remove {
+    background: #eee;
+    color: #333;
+    border-radius: 20px;
+}
+
+.btn-remove:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* SUMMARY */
+.cart-summary {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.cart-summary h4 span {
+    color: var(--primary-color);
+}
+
+/* BUTTONS */
+.btn-gold {
+    background: var(--primary-color);
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* EMPTY CART */
+.empty-cart {
+    padding: 60px 0;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .cart-summary {
+        text-align: center;
+    }
+
+    .cart-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* ================ CHECKOUT page styling ==========================PAGE */
+.checkout-page {
+    padding: 100px 0 60px;
+}
+
+/* HEADER */
+.checkout-header h2 {
+    font-weight: 600;
+}
+
+.checkout-header p {
+    color: #777;
+}
+
+/* SUMMARY BOX */
+.checkout-summary {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* LIST */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+}
+
+/* TOTAL */
+.checkout-total {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.checkout-total span {
+    color: var(--primary-color);
+}
+
+/* CONTACT */
+.checkout-contact h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.phone-number {
+    font-weight: 700;
+}
+
+/* EMPTY */
+.empty-checkout {
+    padding: 60px 0;
+}
+
+/* BUTTON */
+.btn-gold {
+    background: var(--primary-color);
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.btn-gold:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .checkout-total {
+        text-align: center;
+    }
+}
+
+/* Payment Modal styling */
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-header {
+    background: #f8f8f8;
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+/* sitemap styling */
+/* SITEMAP PAGE */
+.sitemap-page {
+    padding: 100px 0 60px;
+}
+
+.sitemap-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.sitemap-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sitemap-list li {
+    margin-bottom: 10px;
+}
+
+.sitemap-list ul {
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.sitemap-list strong {
+    color: var(--primary-color);
+}
+
+/* Mobile view layout styling */
