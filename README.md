@@ -42,10 +42,10 @@ The platform showcases a responsive design, product categories, a functional sho
 1. Install XAMPP (or any local server)
 2. Place the project folder inside:
 
-## htdocs/
+'htdocs/'
 
 3. Start Apache from XAMPP
-4. Open your browser and go to: http:/localhost/ringeria 
+4. Open your browser and go to: http://localhost/ringeria
 
 
 ---
@@ -76,7 +76,6 @@ ringeria/
 ├── js/
 ├── images/
 
-
 ---
 
 ## 🎯 Purpose of the Project
@@ -101,7 +100,4 @@ Ringeria E-Commerce Project
 
 - This is a demo system (no real payment gateway integration)
 - Designed for academic and demonstration purposes
-
-
-
 
